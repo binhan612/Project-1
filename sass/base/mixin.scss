@@ -1,0 +1,25 @@
+@mixin flexDisplay($flexDirection) {
+	display: flex;
+	flex-direction: $flexDirection;
+	flex-wrap: nowrap;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin clearFix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin maxWidth($value){
+	@media screen and (max-width: $value) {
+		@content;
+	}
+}

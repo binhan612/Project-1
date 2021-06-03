@@ -1,0 +1,7 @@
+// Navigation bar
+ul.nav-bar
+	li.nav-bar__item.nav-bar__item--logo
+		img(src="../assets/image/logo.png" alt="logo")
+	each navBarItem in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
+		li.nav-bar__item
+			a(href='#')=  navBarItem

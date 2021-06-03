@@ -1,0 +1,140 @@
+	.header-info__large {
+		@include maxWidth(1129px) {
+			display: none;
+		}
+		margin: 0 10%;
+		background: rgba($colorWhite, 0.2);
+		padding: 0 10px;
+		@include clearFix;
+		z-index: 1;
+		position:absolute;
+		top: 0;
+		right:0;
+		left: 0;
+		.header-info__item {
+			float: left;
+			padding: 6px 10px 6px 0;
+
+			a {
+				text-decoration: none;
+				color: rgba($colorWhite, 0.7);
+			}
+
+			.header-info__item--mark {
+				padding-right: 10px;
+				color: rgba($colorWhite, 0.7);
+			}
+
+			&:first-child {
+				.header-info__item--mark {
+					display: none;
+				}
+			}
+
+			&:hover {
+					color: $colorYelow;
+
+				a {
+				text-decoration: underline;
+				color: $colorYelow;
+				}
+			}
+
+		}
+
+		.header-info__search {
+			float: right;
+
+			input {
+				margin-right: 10px;
+				border: none;
+				border-left: 1px white solid;
+				padding: 3px 16px 3px 3px;
+				background: transparent;
+				color: rgba($colorWhite, 0.7);
+			}
+		}
+	}
+	.header-info__small {
+		@include maxWidth(1129px) {
+			@include flexDisplay(row);
+		}
+		margin: 0 10%;
+		background: rgba($colorWhite, 0.2);
+		position: relative;
+		display: none;
+		z-index: 1;
+		position:absolute;
+		top: 0;
+		right:0;
+		left: 0;
+		.header-info__item {
+			flex: 50%;
+			max-width: 50%;
+			padding: 6px 10px 6px 0;
+			color: rgba($colorWhite, 0.7);
+			@include flexCenter;
+		}
+
+		.header-info__dropdown {
+			.header-info__dropdown-content {
+				display: none;
+			}
+			&:hover {
+				.header-info__dropdown-content {
+					@include flexDisplay(column);
+					width: 100%;
+					position: absolute;
+					top: 34px;
+					left: 0;
+					z-index: 1;
+					background: rgba($colorWhite, 0.2);
+
+					a {
+						text-decoration: none;
+						color: rgba($colorWhite, 0.7);
+					}
+					.header-info__dropdown-content--item {
+						padding: 3px 10px 3px;
+						.header-info__item--mark {
+							padding-right: 10px;
+						}
+						&:hover {
+							color: $colorYelow;
+
+							a {
+							text-decoration: underline;
+							color: $colorYelow;
+							}
+						}
+					}
+				}
+			}
+
+			i {
+				font-weight: 600;
+				margin-left: 10px;
+			}
+		}
+
+		.header-info__search {
+			i {
+				color: rgba($colorWhite, 0.7);
+			}
+			input {
+				display: none;
+			}
+			&:hover {
+				input {
+					display: block;
+					width: 100%;
+					margin-right: 10px;
+					border: none;
+					border-left: 1px white solid;
+					padding: 3px 16px 3px 3px;
+					background: transparent;
+					color: rgba($colorWhite, 0.7);
+				}
+			}
+		}
+	}

@@ -1,0 +1,34 @@
+.nav-bar {
+	@include flexDisplay(row);
+	background: black;
+	padding: 0 10%;
+	@include flexCenter;
+	@include maxWidth(900px) {
+		@include flexDisplay(column);
+	}
+	.nav-bar__item {
+		flex: 12.5%;
+		max-width: 12.5%;
+		text-align: center;
+		font-size: 17px;
+		@include maxWidth(900px) {
+			flex: 100%;
+			max-width: 100%;
+	}
+		a {
+			text-decoration: none;
+			color: rgba($colorWhite, 0.7);
+		}
+		&:hover {
+			a {
+			color: $colorYelow;
+			}
+		}
+	}
+	.nav-bar__item--logo {
+		padding: 5px;
+		img {
+			width: 80%;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+// header-info on large screen
+ul.header-info__large
+	each infoItemLarge in ['Tài khoản của tôi','Trạng thái khách hàng', 'Danh mục ưa thích', 'Giỏ hàng', 'Đăng nhập', 'Đăng ký' ]
+		li.header-info__item
+			span.header-info__item--mark -
+			a(href="#")= infoItemLarge
+	li.header-info__item.header-info__search
+		input(type="text" placeholder="Tìm kiếm tại đây...")
+		a(href="#")
+			i.fa.fa-search
+
+// header-info on small screen
+ul.header-info__small
+	li.header-info__item.header-info__dropdown 
+		span Thông tin cá nhân
+		i.fa.fa-angle-down
+		ul.header-info__dropdown-content
+			each infoItemSmall in ['Tài khoản của tôi','Trạng thái khách hàng', 'Danh mục ưa thích', 'Giỏ hàng', 'Đăng nhập', 'Đăng ký' ]
+				li.header-info__dropdown-content--item
+					span.header-info__item--mark -
+					a(href="#")= infoItemSmall
+	li.header-info__item.header-info__search
+		input(type="text" placeholder="Tìm kiếm tại đây...")
+		a(href="#")
+			i.fa.fa-search
