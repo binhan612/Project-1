@@ -23,3 +23,77 @@
 		@content;
 	}
 }
+
+@mixin productImage($widthPercent, $imgWidth, $mediaValue)
+	.main-sales__product-image {
+		flex: $widthPercent;
+		max-width: $widthPercent;
+		position: relative;
+		@include maxWidth(1129px) {
+			flex: 100%;
+			max-width: 100%;
+		}
+
+		.main-sales__product-image--tittle-container-1 {
+			height: 0;
+			width: 0;
+			border-top: 100px solid $colorYelow;
+			border-right: 100px solid transparent;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+		}
+		.main-sales__product-image--tittle-container-2{
+			height: 0;
+			width: 0;
+			border-top: 99px solid white;
+			border-right: 99px solid transparent;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+		}
+		.main-sales__product-image--tittle-container-3 {
+			height: 0;
+			width: 0;
+			border-top: 94px solid $colorYelow;
+			border-right: 94px solid transparent;
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			left: 0;
+		}
+		.main-sales__product-image--tittle-text {
+			position: absolute;
+			z-index: 4;
+			top: 14;
+			left: 7;
+			color: white;
+			font-weight: 400;
+			font-size: 22px;
+			transform: rotate(-45deg);
+		}
+
+		img {
+			width: $imgWidth;
+			position: absolute;
+			z-index: 0;
+			bottom: 0;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    @include maxWidth($mediaValue) {
+				position: static;
+				display: block;
+				margin-left: 50%;
+				padding: 30px;
+			}
+		}
+	}
+
+@mixin tittle
+	.main-intro__tittle {
+		@include flexCenter;
+		@include flexDisplay(column);
+		padding: 25px 0;
+	}

@@ -2,3 +2,19 @@ mixin salesTime(number, unit)
 	div.main-sales__product-content--time-item
 		p.main-sales__product-content--time-number= number
 		p.main-sales__product-content--time-unit= unit
+
+mixin productImage(text, productImg)
+	div.main-sales__product-image
+		div.main-sales__product-image--tittle-container-1
+		div.main-sales__product-image--tittle-container-2
+		div.main-sales__product-image--tittle-container-3
+		p.main-sales__product-image--tittle-text= text
+		img(src!=productImg alt="wine")
+
+mixin tittle(tittle, tittleMark)
+	div.main-intro__tittle
+		h1= tittle
+		img(src!=tittleMark alt="tittle mark")
+
+mixin button(text)
+	button.main-sales__product-content--button= text

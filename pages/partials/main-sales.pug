@@ -3,18 +3,13 @@ div.main-sales
 	div.main-sales__image
 		img(src="assets/image/wine-63931_12802-1240x829.jpg" alt="grape")
 	div.main-sales__product
-		div.main-sales__product-image
-			div.main-sales__product-image--tittle-container-1
-			div.main-sales__product-image--tittle-container-2
-			div.main-sales__product-image--tittle-container-3
-			p.main-sales__product-image--tittle-text Sales
-			img(src="../assets/image/df3218bb45274009c6c3d5de8a6b98bf.jpg" alt="wine")
+		+productImage('Sales', 'assets/image/df3218bb45274009c6c3d5de8a6b98bf.jpg')
 		div.main-sales__product-content
 			div.main-sales__product-content--tittle
 				h1 Rượu nho năm 1987
 				img(src="../assets/image/titleleft-dark.png" alt="tittle mark")
 			p.main-sales__product-content--price 330.000 đ
-			button.main-sales__product-content--button ADD TO CART
+			+button('ADD TO CART')
 			p.main-sales__product-content--text Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.Phasellus sed ultricies mi non congue ullam corper
 			div.main-sales__product-content--time
 				+salesTime('330', 'NGÀY')
