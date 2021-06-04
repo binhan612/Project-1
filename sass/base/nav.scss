@@ -1,10 +1,10 @@
-.nav-bar {
+.nav-bar-large {
 	@include flexDisplay(row);
 	background: black;
 	padding: 0 10%;
 	@include flexCenter;
 	@include maxWidth(900px) {
-		@include flexDisplay(column);
+			display: none;
 	}
 	.nav-bar__item {
 		flex: 12.5%;
@@ -14,14 +14,14 @@
 		@include maxWidth(900px) {
 			flex: 100%;
 			max-width: 100%;
-	}
+		}
 		a {
 			text-decoration: none;
 			color: rgba($colorWhite, 0.7);
 		}
-		&:hover {
+		&:hover, &:nth-child(2) {
 			a {
-			color: $colorYelow;
+				color: $colorYelow;
 			}
 		}
 	}
@@ -30,5 +30,47 @@
 		img {
 			width: 80%;
 		}
+	}
+}
+
+.nav-bar-small {
+	background: black;
+	display: none;
+	padding: 0 10%;
+	@include maxWidth(900px) {
+		@include flexDisplay(row);
+	}
+	.nav-bar__item-dropdown {
+		max-width: 50%;
+		flex: 50%;
+		&:hover{
+			i {
+				color: $colorYelow;
+			}
+			.nav-bar__item-dropdown-content {
+				position: relative;
+				@include flexDisplay(column);
+
+				.nav-bar__item {
+					flex: 100%;
+					max-width: 100%;
+					position: absolute;
+					top: 10px;
+					left: 0;
+				}
+			}
+		}
+
+		i {
+			color: white;
+			font-size: 15px;
+		}
+		.nav-bar__item-dropdown-content {
+			display: none;
+		}
+	}
+	.nav-bar__item-logo {
+		max-width: 50%;
+		flex: 50%;
 	}
 }

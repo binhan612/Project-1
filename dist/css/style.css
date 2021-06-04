@@ -246,7 +246,7 @@ li {
   }
 }
 
-.nav-bar {
+.nav-bar-large {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -257,36 +257,78 @@ li {
   align-items: center;
 }
 @media screen and (max-width: 900px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .nav-bar-large {
+    display: none;
   }
 }
-.nav-bar .nav-bar__item {
+.nav-bar-large .nav-bar__item {
   flex: 12.5%;
   max-width: 12.5%;
   text-align: center;
   font-size: 17px;
 }
 @media screen and (max-width: 900px) {
-  .nav-bar .nav-bar__item {
+  .nav-bar-large .nav-bar__item {
     flex: 100%;
     max-width: 100%;
   }
 }
-.nav-bar .nav-bar__item a {
+.nav-bar-large .nav-bar__item a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
-.nav-bar .nav-bar__item:hover a {
+.nav-bar-large .nav-bar__item:hover a, .nav-bar-large .nav-bar__item:nth-child(2) a {
   color: #eaae48;
 }
-.nav-bar .nav-bar__item--logo {
+.nav-bar-large .nav-bar__item--logo {
   padding: 5px;
 }
-.nav-bar .nav-bar__item--logo img {
+.nav-bar-large .nav-bar__item--logo img {
   width: 80%;
+}
+
+.nav-bar-small {
+  background: black;
+  display: none;
+  padding: 0 10%;
+}
+@media screen and (max-width: 900px) {
+  .nav-bar-small {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.nav-bar-small .nav-bar__item-dropdown {
+  max-width: 50%;
+  flex: 50%;
+}
+.nav-bar-small .nav-bar__item-dropdown:hover i {
+  color: #eaae48;
+}
+.nav-bar-small .nav-bar__item-dropdown:hover .nav-bar__item-dropdown-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.nav-bar-small .nav-bar__item-dropdown:hover .nav-bar__item-dropdown-content .nav-bar__item {
+  flex: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.nav-bar-small .nav-bar__item-dropdown i {
+  color: white;
+  font-size: 15px;
+}
+.nav-bar-small .nav-bar__item-dropdown .nav-bar__item-dropdown-content {
+  display: none;
+}
+.nav-bar-small .nav-bar__item-logo {
+  max-width: 50%;
+  flex: 50%;
 }
 
 .main {

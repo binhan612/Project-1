@@ -1,7 +1,22 @@
 // Navigation bar
-ul.nav-bar
+
+// Navigation bar large
+ul.nav-bar-large
 	li.nav-bar__item.nav-bar__item--logo
-		img(src="../assets/image/logo.png" alt="logo")
-	each navBarItem in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
+		img(src="assets/image/logo.png" alt="logo")
+	each navBarItem1 in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
 		li.nav-bar__item
-			a(href='#')=  navBarItem
+			a(href='#')=  navBarItem1
+
+// Navigation bar small
+ul.nav-bar-small
+	li.nav-bar__item--logo
+		img(src="assets/image/logo.png" alt="logo")
+	li.nav-bar__item--dropdown
+		i.fa.fa-bars
+		ul.nav-bar__item--dropdown-content
+			each navBarItem2 in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
+				li.nav-bar__item
+					a(href='#')=  navBarItem2
+
+	div xyz

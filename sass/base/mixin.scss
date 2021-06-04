@@ -24,7 +24,7 @@
 	}
 }
 
-@mixin productImage($widthPercent, $imgWidth, $mediaValue)
+@mixin productImage($widthPercent, $imgWidth, $mediaValue) {
 	.main-sales__product-image {
 		flex: $widthPercent;
 		max-width: $widthPercent;
@@ -90,10 +90,12 @@
 			}
 		}
 	}
+}
 
-@mixin tittle
+@mixin tittle {
 	.main-intro__tittle {
 		@include flexCenter;
 		@include flexDisplay(column);
 		padding: 25px 0;
 	}
+}
