@@ -1,0 +1,184 @@
+footer {
+	.footer__brand-show {
+		padding: 0 14%;
+		@include flexDisplay(row);
+		@include maxWidth(1000px) {
+			@include flexDisplay(column);
+		}
+
+		.footer__brand-logo {
+			border-bottom: 1px solid rgba($colorBlack, 0.3);
+			padding: 10px 20px;
+			flex: 33.3%;
+			max-width: 33.3%;
+			@include flexCenter;
+
+			&:first-child {
+				border-right: 1px solid rgba($colorBlack, 0.3);
+				@include maxWidth(1000px) {
+					border: none;
+				}
+			}
+
+			&:last-child {
+				border-left: 1px solid rgba($colorBlack, 0.3);
+				@include maxWidth(1000px) {
+					border: none;
+				}
+			}
+
+			@include maxWidth(1000px) {
+				flex: 100%;
+				max-width: 100%;
+				border: none;
+				&:not(:last-child) {
+					border-bottom: 1px solid rgba($colorBlack, 0.3);
+				}
+			}
+		}
+	}
+
+	.footer__content {
+		margin: 30px 0;
+		padding: 0 10%;
+		@include flexDisplay(row);
+		@include maxWidth(1000px) {
+			@include flexDisplay(column);
+		}
+
+		.footer__content--info, .footer__content--order {
+			flex: 20%;
+			max-width: 20%;
+			@include maxWidth(1000px) {
+				flex: 100%;
+				max-width: 100%;
+			}
+
+			h4 {
+				color: rgba($colorBlack, 0.7);
+				padding-bottom: 7px;
+			}
+
+			a {
+				text-decoration: none;
+				font-size: 13px;
+				color: rgba($colorBlack, 0.6);
+
+				&:hover {
+					color: $colorYelow;
+				}
+			}
+		}
+
+		.footer__content--email {
+			flex: 30%;
+			max-width: 30%;
+			@include maxWidth(1000px) {
+				flex: 100%;
+				max-width: 100%;
+			}
+
+			h4 {
+				color: rgba($colorBlack, 0.7);
+				padding-bottom: 7px;
+			}
+
+			p {
+				font-size: 14px;
+				color: rgba($colorBlack, 0.6);
+			}
+
+			input {
+				border-radius: 0px;
+				border: 1px solid rgba($colorBlack, 0.7);
+				padding: 5px 6px;
+				width: 60%;
+			}
+
+			.footer__content--email-input-send {
+				display: inline-block;
+				transform: translateX(-4px);
+
+				button {
+					padding: 6px;
+					border-radius: 0px;
+					border: none;
+					color: white;
+					background: black;
+				}
+
+				.triangle {
+					display: inline-block;
+					border-top: 13px solid transparent;
+					border-bottom: 13px solid transparent;
+					border-right: 13px solid transparent;
+					border-left: 13px solid black;
+					transform: translate(-4px, 9px);
+				}
+			}
+
+			.footer__content--email-social {
+				padding-top: 8px;
+
+				.footer__content--email-social-icon {
+					padding-right: 6px;
+					display: inline-block;
+
+					a {
+						color: rgba($colorBlack, 0.7);
+					}
+
+					&:hover {
+						a {
+							color: $colorYelow;
+						}
+					}
+				}
+			}
+		}
+
+		.footer__content--contact {
+			flex: 30%;
+			max-width: 30%;
+
+			h4 {
+				color: rgba($colorBlack, 0.7);
+				padding-bottom: 7px;
+			}
+
+			p {
+				padding: 0 7px 5px 0;
+				display: inline-block;
+				i {
+					padding-right: 5px;
+				}
+				&:last-child:hover {
+					color: $colorYelow;
+				}
+			}
+		}
+	}
+
+	.footer__bar {		
+			border-top: 1px solid rgba($colorBlack, 0.3);
+			padding: 10px 10%;
+			@include clearFix;
+
+			.footer__bar-copyright {
+				color: rgba($colorBlack, 0.7);
+				display: inline-block;
+				font-size: 14px;
+				padding: 8px 0px;
+			}
+
+			.footer__bar-payment {
+				color: rgba($colorBlack, 0.7);
+				float: right;
+				font-size: 25px;
+
+				i {
+					padding: 5px;
+				}
+			}
+		}
+}

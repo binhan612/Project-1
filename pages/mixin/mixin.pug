@@ -18,3 +18,37 @@ mixin tittle(tittle, tittleMark)
 
 mixin button(text)
 	button.main-sales__product-content--button= text
+
+mixin productDetails(text, productImg)
+	div.product-details
+		div.main-sales__product-image
+			div.main-sales__product-image--tittle-container-1
+			div.main-sales__product-image--tittle-container-2
+			div.main-sales__product-image--tittle-container-3
+			p.main-sales__product-image--tittle-text= text
+			img(src!=productImg alt="wine")
+			div.product-hover
+				div.product-hover__item
+					i.fa.fa-heart
+					span Yêu thích
+				div.product-hover__item
+					i.fa.fa-signal
+					span So sánh
+				div.product-hover__zoom
+					span +
+		div.product-content
+			h4.product-content__tittle RƯỢU VANG ĐÀ LẠT
+			p.product-content__price
+				span.product-content__price-main 370.000 đ
+				span.product-content__price-old - 450.000 đ
+			+button('ADD TO CART')
+
+mixin contactItem(contactIcon, contactText)
+	p
+		i.fa(class=contactIcon)
+		span=contactText
+
+mixin productSocialItem(image, number)
+	p 
+		img(src!=image)
+		span=number

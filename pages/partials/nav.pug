@@ -4,7 +4,21 @@
 ul.nav-bar-large
 	li.nav-bar__item.nav-bar__item--logo
 		img(src="assets/image/logo.png" alt="logo")
-	each navBarItem1 in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
+	li.nav-bar__item
+		a(href='#') Trang chủ
+	li.nav-bar__item
+		a(href='#') Rượu Vang đỏ
+		ul.nav-bar__item-dropdown-content
+			each columnTittle in ['RƯỢU NGOẠI', 'RƯỢU VANG', 'RƯỢU NGOẠI']
+				li.nav-bar__item-dropdown-content--column
+					h4=columnTittle
+					ul.nav-bar__item-dropdown-content--column-list
+						each columnListItem in ['Rượu Chivas', 'Hàng độc-Rượu độc đáo', 'Johnnie Walker', 'Rượu Wiskey', 'Rượu Remy Martin', 'Rượu Gerlemmoraing']
+							li
+								a(href='#')=columnListItem
+			li.nav-bar__item-dropdown-content--column.nav-bar__item-dropdown-content--column-image
+				img(src='assets/image/12.jpg' alt='wine')
+	each navBarItem1 in ['Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
 		li.nav-bar__item
 			a(href='#')=  navBarItem1
 
@@ -15,8 +29,20 @@ ul.nav-bar-small
 	li.nav-bar__item--dropdown
 		i.fa.fa-bars
 		ul.nav-bar__item--dropdown-content
-			each navBarItem2 in ['Trang chủ','Rượu Vang đỏ', 'Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
+			li.nav-bar__item
+				a(href='#') Trang chủ
+			li.nav-bar__item
+				a(href='#') Rượu Vang đỏ
+					ul.nav-bar-small__item-dropdown-content
+						each columnTittle in ['RƯỢU NGOẠI', 'RƯỢU VANG', 'RƯỢU NGOẠI']
+							li.nav-bar__item-dropdown-content--column
+								h4=columnTittle
+								ul.nav-bar__item-dropdown-content--column-list
+									each columnListItem in ['Rượu Chivas', 'Hàng độc-Rượu độc đáo', 'Johnnie Walker', 'Rượu Wiskey', 'Rượu Remy Martin', 'Rượu Gerlemmoraing']
+										li
+											a(href='#')=columnListItem
+						li.nav-bar__item-dropdown-content--column.nav-bar__item-dropdown-content--column-image
+							img(src='assets/image/12.jpg' alt='wine')
+			each navBarItem2 in ['Rượu trắng', 'Champagne', 'Thông tin', 'Blog', 'Liên hệ' ]
 				li.nav-bar__item
 					a(href='#')=  navBarItem2
-
-	div xyz

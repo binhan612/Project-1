@@ -1,0 +1,89 @@
+extend ../pages/layout
+block page
+	include ../pages/partials/header-info
+block unique content
+	div.detail
+		div.detail-show
+			p.detail-show__nav
+				a(href='#') Trang chủ / 
+				a(href='#') Sản phẩm / 
+				a.active(href='#') Rượu vang đỏ
+			div.detail-show__product
+				div.detail-show__product-showcase
+					div.detail-show__product-showcase-list
+						i.fa.fa-arrow-up
+						each productListItem in ['assets/image/a.jpg','assets/image/a.jpg','assets/image/a.jpg','assets/image/a.jpg','assets/image/a.jpg']
+							div.detail-show__product-showcase-list--item
+								img(src='assets/image/a.jpg' alt='product')
+						i.fa.fa-arrow-down
+					div.detail-show__product-showcase-image
+						img(src='assets/image/b.jpg' alt='product')
+				div.detail-show__product-content
+					+tittle('Rượu nho năm 1978', 'assets/image/titleleft-dark.png')
+					p.detail-show__product-content--price 330.000 đ
+					div.detail-show__product-content--review
+						span
+							i.fa.fa-star.checked
+							i.fa.fa-star.checked
+							i.fa.fa-star.checked
+							i.fa.fa-star-half-o
+							i.fa.fa-sta
+						span  | 1 Review(S) | 
+						span Add Your Review
+					div.detail-show__product-content--color
+						h3 MÀU SẮC
+						span
+						span
+						span
+					div.detail-show__product-content--size
+						h3 KÍCH CỠ
+						p Loại to
+					div.detail-show__product-content--quantity
+						h3 SỐ LƯỢNG
+						P
+							span -
+							span 3
+							span +
+						+button('ADD TO CART')
+					div.detail-show__product-content--love
+						div.love__item
+							i.fa.fa-heart
+							span Yêu thích
+						div.love__item
+							i.fa.fa-signal
+							span So sánh
+						div.love__item
+							i.fa.fa-envelope
+							span Email
+					div.detail-show__product-content--discribe
+						h3 MÔ TẢ
+						P I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+					div.detail-show__product-content--social
+						+productSocialItem('assets/image/new_facebook_like_640.png', '0')
+						+productSocialItem('assets/image/download (1).jpg', '0')
+						+productSocialItem('assets/image/unnamed.png', '0')
+						+productSocialItem('assets/image/14-512.png', 'Share')
+						+productSocialItem('assets/image/pin-it-button-pinterest-logo-9D923D9355-seeklogo.com.png', '')
+			div.detail-show__content
+				div.detail-show__content-text
+					div.detail-show__content-text--tag
+						h4.active 
+							a(href='#') ĐẶC ĐIỂM NỔI BẬT
+						h4
+							a(href='#') THÔNG TIN SẢN PHẨM
+						h4 
+							a(href='#') ĐÁNH GIÁ
+					p I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+				div.detail-show__content-image
+					img(src='assets/image/Depositphotos_3010981_original1.jpg' alt='wine')
+					p RƯỢU NHO
+		div.detail-relative
+			+tittle('Sản phẩm liên quan','assets/image/title-dark.png')
+			div.product-show
+				i.fa.fa-arrow-left
+				div.product-category
+					+productDetails('', 'assets/image/ASB0904_001.jpeg')
+					+productDetails('', 'assets/image/ASB0904_001.jpeg')
+					+productDetails('', 'assets/image/ASB0904_001.jpeg')
+					+productDetails('', 'assets/image/ASB0904_001.jpeg')
+				i.fa.fa-arrow-right

@@ -6,37 +6,38 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/all.js"></script>
   </head>
   <body>
+    <!-- header-info on large screen-->
+    <ul class="header-info-homepage__large">
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Tài khoản của tôi</a></li>
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Trạng thái khách hàng</a></li>
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Danh mục ưa thích</a></li>
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Giỏ hàng</a></li>
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Đăng nhập</a></li>
+      <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Đăng ký</a></li>
+      <li class="header-info__item header-info__search">
+        <input type="text" placeholder="Tìm kiếm tại đây..."/><a href="#"><i class="fa fa-search"></i></a>
+      </li>
+    </ul>
+    <!-- header-info on small screen-->
+    <ul class="header-info-homepage__small">
+      <li class="header-info__item header-info__dropdown"> <span>Thông tin cá nhân</span><i class="fa fa-angle-down"></i>
+        <ul class="header-info__dropdown-content">
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Tài khoản của tôi</a></li>
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Trạng thái khách hàng</a></li>
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Danh mục ưa thích</a></li>
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Giỏ hàng</a></li>
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Đăng nhập</a></li>
+          <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Đăng ký</a></li>
+        </ul>
+      </li>
+      <li class="header-info__item header-info__search">
+        <input type="text" placeholder="Tìm kiếm tại đây..."/><a href="#"><i class="fa fa-search"></i></a>
+      </li>
+    </ul>
     <div class="header"><img src="assets/image/slide-1-2050x898.jpg" width="100%"/>
-      <!-- header-info on large screen-->
-      <ul class="header-info__large">
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Tài khoản của tôi</a></li>
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Trạng thái khách hàng</a></li>
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Danh mục ưa thích</a></li>
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Giỏ hàng</a></li>
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Đăng nhập</a></li>
-        <li class="header-info__item"><span class="header-info__item--mark">-</span><a href="#">Đăng ký</a></li>
-        <li class="header-info__item header-info__search">
-          <input type="text" placeholder="Tìm kiếm tại đây..."/><a href="#"><i class="fa fa-search"></i></a>
-        </li>
-      </ul>
-      <!-- header-info on small screen-->
-      <ul class="header-info__small">
-        <li class="header-info__item header-info__dropdown"> <span>Thông tin cá nhân</span><i class="fa fa-angle-down"></i>
-          <ul class="header-info__dropdown-content">
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Tài khoản của tôi</a></li>
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Trạng thái khách hàng</a></li>
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Danh mục ưa thích</a></li>
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Giỏ hàng</a></li>
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Đăng nhập</a></li>
-            <li class="header-info__dropdown-content--item"><span class="header-info__item--mark">-</span><a href="#">Đăng ký</a></li>
-          </ul>
-        </li>
-        <li class="header-info__item header-info__search">
-          <input type="text" placeholder="Tìm kiếm tại đây..."/><a href="#"><i class="fa fa-search"></i></a>
-        </li>
-      </ul>
       <!-- Banner-->
       <div class="banner">
         <div class="banner__text">
@@ -51,7 +52,44 @@
     <ul class="nav-bar-large">
       <li class="nav-bar__item nav-bar__item--logo"><img src="assets/image/logo.png" alt="logo"/></li>
       <li class="nav-bar__item"><a href="#">Trang chủ</a></li>
-      <li class="nav-bar__item"><a href="#">Rượu Vang đỏ</a></li>
+      <li class="nav-bar__item"><a href="#">Rượu Vang đỏ</a>
+        <ul class="nav-bar__item-dropdown-content">
+          <li class="nav-bar__item-dropdown-content--column">
+            <h4>RƯỢU NGOẠI</h4>
+            <ul class="nav-bar__item-dropdown-content--column-list">
+              <li><a href="#">Rượu Chivas</a></li>
+              <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+              <li><a href="#">Johnnie Walker</a></li>
+              <li><a href="#">Rượu Wiskey</a></li>
+              <li><a href="#">Rượu Remy Martin</a></li>
+              <li><a href="#">Rượu Gerlemmoraing</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar__item-dropdown-content--column">
+            <h4>RƯỢU VANG</h4>
+            <ul class="nav-bar__item-dropdown-content--column-list">
+              <li><a href="#">Rượu Chivas</a></li>
+              <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+              <li><a href="#">Johnnie Walker</a></li>
+              <li><a href="#">Rượu Wiskey</a></li>
+              <li><a href="#">Rượu Remy Martin</a></li>
+              <li><a href="#">Rượu Gerlemmoraing</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar__item-dropdown-content--column">
+            <h4>RƯỢU NGOẠI</h4>
+            <ul class="nav-bar__item-dropdown-content--column-list">
+              <li><a href="#">Rượu Chivas</a></li>
+              <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+              <li><a href="#">Johnnie Walker</a></li>
+              <li><a href="#">Rượu Wiskey</a></li>
+              <li><a href="#">Rượu Remy Martin</a></li>
+              <li><a href="#">Rượu Gerlemmoraing</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar__item-dropdown-content--column nav-bar__item-dropdown-content--column-image"><img src="assets/image/12.jpg" alt="wine"/></li>
+        </ul>
+      </li>
       <li class="nav-bar__item"><a href="#">Rượu trắng</a></li>
       <li class="nav-bar__item"><a href="#">Champagne</a></li>
       <li class="nav-bar__item"><a href="#">Thông tin</a></li>
@@ -64,7 +102,43 @@
       <li class="nav-bar__item--dropdown"><i class="fa fa-bars"></i>
         <ul class="nav-bar__item--dropdown-content">
           <li class="nav-bar__item"><a href="#">Trang chủ</a></li>
-          <li class="nav-bar__item"><a href="#">Rượu Vang đỏ</a></li>
+          <li class="nav-bar__item"><a href="#">Rượu Vang đỏ
+              <ul class="nav-bar-small__item-dropdown-content">
+                <li class="nav-bar__item-dropdown-content--column">
+                  <h4>RƯỢU NGOẠI</h4>
+                  <ul class="nav-bar__item-dropdown-content--column-list">
+                    <li><a href="#">Rượu Chivas</a></li>
+                    <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+                    <li><a href="#">Johnnie Walker</a></li>
+                    <li><a href="#">Rượu Wiskey</a></li>
+                    <li><a href="#">Rượu Remy Martin</a></li>
+                    <li><a href="#">Rượu Gerlemmoraing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-bar__item-dropdown-content--column">
+                  <h4>RƯỢU VANG</h4>
+                  <ul class="nav-bar__item-dropdown-content--column-list">
+                    <li><a href="#">Rượu Chivas</a></li>
+                    <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+                    <li><a href="#">Johnnie Walker</a></li>
+                    <li><a href="#">Rượu Wiskey</a></li>
+                    <li><a href="#">Rượu Remy Martin</a></li>
+                    <li><a href="#">Rượu Gerlemmoraing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-bar__item-dropdown-content--column">
+                  <h4>RƯỢU NGOẠI</h4>
+                  <ul class="nav-bar__item-dropdown-content--column-list">
+                    <li><a href="#">Rượu Chivas</a></li>
+                    <li><a href="#">Hàng độc-Rượu độc đáo</a></li>
+                    <li><a href="#">Johnnie Walker</a></li>
+                    <li><a href="#">Rượu Wiskey</a></li>
+                    <li><a href="#">Rượu Remy Martin</a></li>
+                    <li><a href="#">Rượu Gerlemmoraing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-bar__item-dropdown-content--column nav-bar__item-dropdown-content--column-image"><img src="assets/image/12.jpg" alt="wine"/></li>
+              </ul></a></li>
           <li class="nav-bar__item"><a href="#">Rượu trắng</a></li>
           <li class="nav-bar__item"><a href="#">Champagne</a></li>
           <li class="nav-bar__item"><a href="#">Thông tin</a></li>
@@ -72,89 +146,452 @@
           <li class="nav-bar__item"><a href="#">Liên hệ</a></li>
         </ul>
       </li>
-      <div>abc</div>
     </ul>
     <!--main-->
     <div class="main"><img class="main-img" src="../assets/image/product.jpg" alt="grape"/>
       <!--intro-->
       <div class="main-intro">
-            <div class="main-intro__tittle">
-              <h1>Giới thiệu</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
-            </div>
+        <div class="main-intro__tittle">
+          <h1>GIỚI THIỆU</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
+        </div>
         <p>I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <button class="main-sales__product-content--button">XEM THÊM</button>
+        <button class="main-sales__product-content--button">XEM THÊM</button>
       </div>
       <!--sales-->
       <div class="main-sales">
         <div class="main-sales__image"><img src="assets/image/wine-63931_12802-1240x829.jpg" alt="grape"/></div>
         <div class="main-sales__product">
-              <div class="main-sales__product-image">
-                <div class="main-sales__product-image--tittle-container-1"></div>
-                <div class="main-sales__product-image--tittle-container-2"></div>
-                <div class="main-sales__product-image--tittle-container-3"></div>
-                <p class="main-sales__product-image--tittle-text">Sales</p><img src="assets/image/df3218bb45274009c6c3d5de8a6b98bf.jpg" alt="wine"/>
-              </div>
+          <div class="main-sales__product-image">
+            <div class="main-sales__product-image--tittle-container-1"></div>
+            <div class="main-sales__product-image--tittle-container-2"></div>
+            <div class="main-sales__product-image--tittle-container-3"></div>
+            <p class="main-sales__product-image--tittle-text">Sales</p><img src="assets/image/df3218bb45274009c6c3d5de8a6b98bf.jpg" alt="wine"/>
+          </div>
           <div class="main-sales__product-content">
             <div class="main-sales__product-content--tittle">
               <h1>Rượu nho năm 1987</h1><img src="../assets/image/titleleft-dark.png" alt="tittle mark"/>
             </div>
             <p class="main-sales__product-content--price">330.000 đ</p>
-                <button class="main-sales__product-content--button">ADD TO CART</button>
+            <button class="main-sales__product-content--button">ADD TO CART</button>
             <p class="main-sales__product-content--text">Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.Phasellus sed ultricies mi non congue ullam corper</p>
             <div class="main-sales__product-content--time">
-                  <div class="main-sales__product-content--time-item">
-                    <p class="main-sales__product-content--time-number">330</p>
-                    <p class="main-sales__product-content--time-unit">NGÀY</p>
-                  </div>
-                  <div class="main-sales__product-content--time-item">
-                    <p class="main-sales__product-content--time-number">26</p>
-                    <p class="main-sales__product-content--time-unit">GIỜ</p>
-                  </div>
-                  <div class="main-sales__product-content--time-item">
-                    <p class="main-sales__product-content--time-number">60</p>
-                    <p class="main-sales__product-content--time-unit">PHÚT</p>
-                  </div>
-                  <div class="main-sales__product-content--time-item">
-                    <p class="main-sales__product-content--time-number">15</p>
-                    <p class="main-sales__product-content--time-unit">GIÂY</p>
-                  </div>
+              <div class="main-sales__product-content--time-item">
+                <p class="main-sales__product-content--time-number">330</p>
+                <p class="main-sales__product-content--time-unit">NGÀY</p>
+              </div>
+              <div class="main-sales__product-content--time-item">
+                <p class="main-sales__product-content--time-number">26</p>
+                <p class="main-sales__product-content--time-unit">GIỜ</p>
+              </div>
+              <div class="main-sales__product-content--time-item">
+                <p class="main-sales__product-content--time-number">60</p>
+                <p class="main-sales__product-content--time-unit">PHÚT</p>
+              </div>
+              <div class="main-sales__product-content--time-item">
+                <p class="main-sales__product-content--time-number">15</p>
+                <p class="main-sales__product-content--time-unit">GIÂY</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="new">
-            <div class="main-intro__tittle">
-              <h1>Sản phẩm mới</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
-            </div>
-        <div class="product-show"><span>&#8592;</span>
+      <div class="main-new">
+        <div class="main-intro__tittle">
+          <h1>Sản phẩm mới</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
+        </div>
+        <div class="product-show"><i class="fa fa-arrow-left"></i>
           <div class="product-category">
             <div class="product-details">
-                  <div class="main-sales__product-image">
-                    <div class="main-sales__product-image--tittle-container-1"></div>
-                    <div class="main-sales__product-image--tittle-container-2"></div>
-                    <div class="main-sales__product-image--tittle-container-3"></div>
-                    <p class="main-sales__product-image--tittle-text">Sales</p><img src="assets/image/508c88894d0b4dccaa27670fb720938d.jpg" alt="wine"/>
-                  </div>
-              <div class="product-hover">
-                <div class="product-hover__love"><i class="fa fa-heart"></i>
-                  <p>Yêu thích</p>
-                </div>
-                <div class="product-compare"><i class="fa fa-signal"></i>
-                  <p>So sánh</p>
-                </div>
-                <div class="product-zoom">
-                  <p> </p>
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text">SALES</p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
                 </div>
               </div>
               <div class="product-content">
-                <h3 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h3>
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
                 <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
-                    <button class="main-sales__product-content--button">ADD TO CART</button>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text">MỚI</p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text">HOT</p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text"></p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+          </div><i class="fa fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="main-pictures">
+        <div class="main-pictures__container">
+          <div class="main-pictures_image"><img src="assets/image/1.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/5.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/2.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/6.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/3.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/7.1.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/4.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-pictures_image"><img src="assets/image/9.jpg" alt="grape"/>
+            <div class="main-pictures_image-overlay">
+              <div class="main-pictures_image-overlay-grid">
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">1987</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item">RƯỢU</div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
+                <div class="main-pictures_image-overlay-grid-item"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="main-hot">
+        <div class="main-intro__tittle">
+          <h1>Sản phẩm bán chạy</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
+        </div>
+        <div class="product-show"><i class="fa fa-arrow-left"></i>
+          <div class="product-category">
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text"></p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text"></p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text"></p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="main-sales__product-image">
+                <div class="main-sales__product-image--tittle-container-1"></div>
+                <div class="main-sales__product-image--tittle-container-2"></div>
+                <div class="main-sales__product-image--tittle-container-3"></div>
+                <p class="main-sales__product-image--tittle-text"></p><img src="assets/image/ASB0904_001.jpeg" alt="wine"/>
+                <div class="product-hover">
+                  <div class="product-hover__item"><i class="fa fa-heart"></i><span>Yêu thích</span></div>
+                  <div class="product-hover__item"><i class="fa fa-signal"></i><span>So sánh</span></div>
+                  <div class="product-hover__zoom"><span>+</span></div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4 class="product-content__tittle">RƯỢU VANG ĐÀ LẠT</h4>
+                <p class="product-content__price"><span class="product-content__price-main">370.000 đ</span><span class="product-content__price-old">- 450.000 đ</span></p>
+                <button class="main-sales__product-content--button">ADD TO CART</button>
+              </div>
+            </div>
+          </div><i class="fa fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="main-blogs-customers">
+        <div class="main-blogs">
+          <div class="main-intro__tittle">
+            <h1>TIM TỨC &amp; BLOGS</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
+          </div>
+          <div class="main-blogs__article-show">
+            <div class="main-blogs__article">
+              <div class="main-blogs__article-image"><img src="assets/image/Depositphotos_3010981_original1.jpg"/>
+                <div class="main-blogs__article-image-overlay">
+                  <div class="main-blogs__article-image-overlay-triangle"></div>
+                  <div class="main-blogs__article-image-overlay-round"><i class="fa fa-chain"></i></div>
+                </div>
+              </div>
+              <div class="main-blogs__article-content">
+                <h3>VANG THĂNG LONG CLASSIC</h3>
+                <p class="main-blogs__article-content--text-1"><span>Đăng bởi Lan</span><span>30/06/2015</span><span>60 bình luận</span></p>
+                <p class="main-blogs__article-content--text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel...<a href="#">Read more</a></p>
+              </div>
+            </div>
+            <div class="main-blogs__article">
+              <div class="main-blogs__article-image"><img src="assets/image/Depositphotos_6971969_original-1240x698.jpg"/>
+                <div class="main-blogs__article-image-overlay">
+                  <div class="main-blogs__article-image-overlay-triangle"></div>
+                  <div class="main-blogs__article-image-overlay-round"><i class="fa fa-chain"></i></div>
+                </div>
+              </div>
+              <div class="main-blogs__article-content">
+                <h3>VANG THĂNG LONG CLASSIC</h3>
+                <p class="main-blogs__article-content--text-1"><span>Đăng bởi Lan</span><span>30/06/2015</span><span>60 bình luận</span></p>
+                <p class="main-blogs__article-content--text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel...<a href="#">Read more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-customers">
+          <div class="main-intro__tittle">
+            <h1>KHÁCH HÀNG</h1><img src="assets/image/title-dark.png" alt="tittle mark"/>
+          </div>
+          <div class="main-customers-comment"><i class="fa fa-quote-right"></i>
+            <div class="main-customers-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel...<a href="#">Read more</a></p>
+            </div>
+            <div class="main-customers-avatar"><img src="assets/image/timthumb (2).jpg" alt="avt"/>
+              <p class="main-customers-avatar__name">GIANGLT</p>
+              <P class="main-customers-avatar__job">Graphic Design</P>
+            </div>
+          </div>
+          <div class="main-customers-more"><span></span><span></span><span></span></div>
+        </div>
+      </div>
     </div>
+    <footer> 
+      <div class="footer__brand-show">
+        <div class="footer__brand-logo"><img src="assets/image/1.png"/></div>
+        <div class="footer__brand-logo"><img src="assets/image/2.png"/></div>
+        <div class="footer__brand-logo"><img src="assets/image/3.png"/></div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content--info">
+          <h4>THÔNG TIN</h4>
+          <ul class="footer__content--info-list">
+            <li class="footer__content--info-list-item"> <a href="#">VỀ CHUNG TÔI</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">GIAO HÀNG</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">CAM KẾT</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">LƯU TRỮ</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">CHÍNH SÁCH RIÊNG TƯ</a></li>
+          </ul>
+        </div>
+        <div class="footer__content--order">
+          <h4>MUA HÀNG</h4>
+          <ul class="footer__content--info-list">
+            <li class="footer__content--info-list-item"> <a href="#">VẬN CHUYỂN TRẢ HÀNG</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">MUA HÀNG AN TOÀN</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">VẬN CHUYỂN QUỐC TẾ</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">LIÊN KẾT</a></li>
+            <li class="footer__content--info-list-item"> <a href="#">DỊCH VỤ GIẢM GIÁ</a></li>
+          </ul>
+        </div>
+        <div class="footer__content--email">
+          <h4>GỞI EMAIL</h4>
+          <P>Gởi email cho chúng tôi để được hổ trợ</P>
+          <div class="footer__content--email-input">
+            <input type="text" placeholder="Enter your email"/>
+            <div class="footer__content--email-input-send">
+              <button>Gửi</button>
+              <div class="triangle"></div>
+            </div>
+          </div>
+          <ul class="footer__content--email-social">
+            <li class="footer__content--email-social-icon"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="footer__content--email-social-icon"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li class="footer__content--email-social-icon"><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+            <li class="footer__content--email-social-icon"><a href="#"><i class="fa fa-flickr"></i></a></li>
+            <li class="footer__content--email-social-icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__content--contact">
+          <h4>LIÊN HỆ</h4>
+          <p><i class="fa fa-map-marker"></i><span>Tầng 4, tòa nhà Hanoi Group, số 442 Đội Cấn, Ba đình, Hà Nội</span></p>
+          <p><i class="fa fa-phone"></i><span>(04) 6789 1234</span></p>
+          <p><i class="fa fa-phone"></i><span>(04) 6789 1234</span></p>
+          <p><i class="fa fa-phone"></i><span>(08) 6789 12345</span></p>
+          <p><i class="fa fa-envelope"></i><span>support@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar-copyright">
+          <p>&#169; 2014-2019 DKT Technology JSC</p>
+        </div>
+        <div class="footer__bar-payment"><i class="fa fa-cc-visa"></i><i class="fa fa-paypal"></i><i class="fa fa-cc-mastercard"></i><i class="fa fa-cc-paypal"></i></div>
+      </div>
+    </footer>
   </body>
 </html>

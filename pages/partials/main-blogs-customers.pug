@@ -1,0 +1,35 @@
+div.main-blogs-customers
+	div.main-blogs
+		+tittle('TIM TỨC & BLOGS','assets/image/title-dark.png')
+		div.main-blogs__article-show
+			each blogArticle in ['assets/image/Depositphotos_3010981_original1.jpg', 'assets/image/Depositphotos_6971969_original-1240x698.jpg']
+				div.main-blogs__article
+					div.main-blogs__article-image
+						img(src!=blogArticle)
+						div.main-blogs__article-image-overlay
+							div.main-blogs__article-image-overlay-triangle
+							div.main-blogs__article-image-overlay-round
+								i.fa.fa-chain
+					div.main-blogs__article-content
+						h3 VANG THĂNG LONG CLASSIC
+						p.main-blogs__article-content--text-1
+							span Đăng bởi Lan
+							span 30/06/2015
+							span 60 bình luận
+						p.main-blogs__article-content--text-2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel...
+							a(href='#') Read more
+	div.main-customers
+		+tittle('KHÁCH HÀNG','assets/image/title-dark.png')
+		div.main-customers-comment
+			i.fa.fa-quote-right
+			div.main-customers-content
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel...
+					a(href='#') Read more
+			div.main-customers-avatar
+				img(src='assets/image/timthumb (2).jpg' alt='avt')
+				p.main-customers-avatar__name GIANGLT
+				P.main-customers-avatar__job Graphic Design
+		div.main-customers-more
+			span
+			span
+			span

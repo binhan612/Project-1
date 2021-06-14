@@ -38,9 +38,9 @@ function serve() {
 		} 
 	}) 
 
-	watch(sassFiles, sassTask); 
+	watch('sass/**/*.scss', sassTask); 
 	watch(jsFiles, jsTask); 
-	watch(htmlFiles, htmlTask); 
+	watch('pages/**/*.pug', htmlTask); 
 }
 
 exports.js = jsTask; 

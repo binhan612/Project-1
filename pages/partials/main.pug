@@ -3,27 +3,7 @@ div.main
 	img.main-img(src="../assets/image/product.jpg" alt="grape")
 	include main-intro
 	include main-sales
-	
-	div.new
-		+tittle('Sản phẩm mới','assets/image/title-dark.png')
-		div.product-show
-			span &#8592;
-			div.product-category
-				div.product-details
-					+productImage('Sales','assets/image/508c88894d0b4dccaa27670fb720938d.jpg')
-					div.product-hover
-						div.product-hover__love
-							i.fa.fa-heart
-							p Yêu thích
-						div.product-compare
-							i.fa.fa-signal
-							p So sánh
-						div.product-zoom
-							p 
-					div.product-content
-						h3.product-content__tittle RƯỢU VANG ĐÀ LẠT
-						p.product-content__price
-							span.product-content__price-main 370.000 đ
-							span.product-content__price-old - 450.000 đ
-						+button('ADD TO CART')
-
+	include main-new
+	include main-pictures
+	include main-hot
+	include main-blogs-customers

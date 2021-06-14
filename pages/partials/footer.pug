@@ -1,0 +1,47 @@
+footer 
+	div.footer__brand-show
+		each branchLogo in ['assets/image/1.png', 'assets/image/2.png','assets/image/3.png']
+			div.footer__brand-logo
+				img(src!=branchLogo)
+	div.footer__content
+		div.footer__content--info
+			h4 THÔNG TIN
+			ul.footer__content--info-list
+				each infoListItem in ['VỀ CHUNG TÔI', 'GIAO HÀNG', 'CAM KẾT', 'LƯU TRỮ', 'CHÍNH SÁCH RIÊNG TƯ']
+					li.footer__content--info-list-item 
+						a(href='#')= infoListItem
+		div.footer__content--order
+			h4 MUA HÀNG
+			ul.footer__content--info-list
+				each infoListItem in ['VẬN CHUYỂN TRẢ HÀNG', 'MUA HÀNG AN TOÀN', 'VẬN CHUYỂN QUỐC TẾ', 'LIÊN KẾT', 'DỊCH VỤ GIẢM GIÁ']
+					li.footer__content--info-list-item 
+						a(href='#')= infoListItem
+		div.footer__content--email
+			h4 GỞI EMAIL
+			P Gởi email cho chúng tôi để được hổ trợ
+			div.footer__content--email-input
+				input(type='text', placeholder='Enter your email')
+				div.footer__content--email-input-send
+					button Gửi
+					div.triangle
+			ul.footer__content--email-social
+				each emailSocialIcon in ['fa-twitter', 'fa-linkedin', 'fa-facebook-official', 'fa-flickr', 'fa-instagram']
+					li.footer__content--email-social-icon
+						a(href='#')
+							i.fa(class=emailSocialIcon)
+		div.footer__content--contact
+			h4 LIÊN HỆ
+			+contactItem('fa-map-marker', 'Tầng 4, tòa nhà Hanoi Group, số 442 Đội Cấn, Ba đình, Hà Nội')
+			+contactItem('fa-phone', '(04) 6789 1234')
+			+contactItem('fa-phone', '(04) 6789 1234')
+			+contactItem('fa-phone', '(08) 6789 12345')
+			+contactItem('fa-envelope', 'support@gmail.com')
+	div.footer__bar
+		div.footer__bar-copyright
+			p &#169; 2014-2019 DKT Technology JSC
+		div.footer__bar-payment
+			i.fa.fa-cc-visa
+			i.fa.fa-paypal
+			i.fa.fa-cc-mastercard
+			i.fa.fa-cc-paypal
+

@@ -1,0 +1,16 @@
+.main-hot {
+	@include productShow;
+	.product-show {
+		.product-category {
+			.product-details {
+				&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+					.main-sales__product-image {
+						.main-sales__product-image--tittle-container-1, .main-sales__product-image--tittle-container-2, .main-sales__product-image--tittle-container-3 {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
