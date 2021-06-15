@@ -4,10 +4,7 @@ block page
 block unique content
 	div.detail
 		div.detail-show
-			p.detail-show__nav
-				a(href='#') Trang chủ / 
-				a(href='#') Sản phẩm / 
-				a.active(href='#') Rượu vang đỏ
+			+showNav('Trang chủ / ', 'Sản phẩm / ', 'Rượu vang đỏ')
 			div.detail-show__product
 				div.detail-show__product-showcase
 					div.detail-show__product-showcase-list

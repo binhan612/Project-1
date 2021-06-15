@@ -52,3 +52,9 @@ mixin productSocialItem(image, number)
 	p 
 		img(src!=image)
 		span=number
+
+mixin showNav(text1, text2, text3)
+	p.detail-show__nav
+		a(href='#')=text1
+		a(href='#')=text2
+		a.active(href='#')=text3
